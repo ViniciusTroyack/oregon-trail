@@ -30,8 +30,9 @@ class Traveler {
 class Wagon {
   constructor(capacity) {
     this.capacity = capacity;
+    this.passageiros = [];
   }
-  passageiros = [];
+  
 
   getAvailableSeatCount() {
     return this.capacity - this.passageiros.length;
